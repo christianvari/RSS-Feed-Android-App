@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="DoorDash - Food Delivery " />
+
+    <TextView
+        android:id="@+id/tvArtist"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:textAlignment="viewEnd"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvName"
+        tools:text="DoorDash, Inc." />
+
+    <TextView
+        android:id="@+id/tvSummary"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="@android:color/primary_text_light"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvArtist"
+        tools:text="Delivery anywhere you are. DoorDash offers the greatest selection of your favorite local and national restaurants -- more than 310,000 menus across 4,000+ cities in the U.S.,Canada and Australia. Spend more time doing the things you love -- we'll take care of the rest. YOUR FAVORITE RESTAURANTS JUST A FEW TAPS AWAY Choose from a huge variety of cuisines, from your local sushi spot to the comfort food you crave. Get your favorite meals faster with quick and easy ordering. SUBSCRIBE TO DASHPASS DashPass offers lower service fees and $0 delivery fees, with thousands of local restaurants recently added. NO-CONTACT DELIVERY Deliveries are now left at your door by default and you have the choice to select “Hand it to me” if you prefer. If a no-contact delivery is requested, the Dasher will know you want them to leave your food in a safe place and alert you when it’s ready for pickup. SCHEDULE DELIVERIES Advance ordering allows you to get your food when it's most convenient for you. REAL-TIME TRACKING See when your order will arrive. From food quality to prep-times to traffic to weather, we've factored in all the elements that come between you and your food. NO MINIMUMS Order as little or as much as you want. PAYMENT Conveniently pay via Apple Pay or credit card. ABOUT DOORDASH DoorDash is a technology company that connects people with the best in their cities. We do this by empowering local businesses and in turn, generate new ways for people to earn, work and live. We started this by facilitating door-to-door delivery, but we see this as just the beginning of connecting people with possibility -- easy evenings, happier days, bigger savings accounts, wider nets and stronger communities. Growing every day and currently serving over 4,000 cities across the United States, Puerto Rico, Canada, and Australia. Visit doordash.com to learn more." />
+</android.support.constraint.ConstraintLayout>
