@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
 
         listApps = findViewById(R.id.xmlListView);
 
-        if(savedInstanceState != null){
+        if (savedInstanceState != null) {
             feedUrl = savedInstanceState.getString(CURRENT_URL);
             feedLimit = savedInstanceState.getInt(CURRENT_LIMIT);
         }
@@ -123,11 +123,7 @@ public class MainActivity extends AppCompatActivity {
             ParserApplications parserApplications = new ParserApplications();
             parserApplications.parse(s);
 
-//            ArrayAdapter<FeedEntry> arrayAdapter = new ArrayAdapter<FeedEntry>(
-//                    MainActivity.this, R.layout.list_item, parserApplications.getApplications());
-//            listApps.setAdapter(arrayAdapter);
-
-            FeedAdapter feedAdapter = new FeedAdapter(
+            FeedAdapter<FeedEntry> feedAdapter = new FeedAdapter<>(
                     MainActivity.this, R.layout.list_record, parserApplications.getApplications());
             listApps.setAdapter(feedAdapter);
         }
